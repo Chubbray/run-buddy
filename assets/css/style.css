@@ -19,12 +19,16 @@ header {
   background-color: #39a6b2;
 }
 
+
+
 header h1 {
   font-weight: bold;
   color: #fce138;
   font-size: 36px;
   margin: 0;
 }
+
+
 
 header a {
   text-decoration: noneo;
@@ -356,5 +360,9 @@ section {
 .flex-row {
   display: flex;
 }
-
 /* REACH OUT STYLES END */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  
+}
