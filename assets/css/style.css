@@ -40,6 +40,7 @@ header h1 {
 header a {
   text-decoration: none;
   color: #fce138;
+  margin-right: 30px;
 }
 
 header nav {
@@ -342,7 +343,7 @@ section {
   align-items: flex-end;
 }
 
-.trainer-img::after {
+.image-wrapper::after + :hover {
   content: "";
   height: 100%;
   width: 100%;
@@ -352,24 +353,27 @@ section {
   left: 0;
 }
 
-.trainer-1 {
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.image-wrapper {
+  content: none;
+}
+
+.image-wrapper:hover {
+  content: "";
+}
+
+.trainer-1  {
   background-image: url("../images/trainer-1.jpg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-position: 80%;
 }
 
 .trainer-2 {
   background-image: url("../images/trainer-2.jpg");
+  background-size: cover;
 }
 
 .trainer-3 {
   background-image: url("../images/trainer-3.jpg");
+  background-size: cover;
 }
 
 .trainer-bio {
@@ -398,22 +402,6 @@ section {
 .trainer-bio p {
   font-size: 17px;
 }
-
-.trainer-1 {
-  background-image: url("../images/trainer-1.jpg");
-  background-size: cover;
-  
-}
-
-.trainer-2 {
-  background-image: url("../images/trainer-2.jpg");
-}
-
-.trainer-3 {
-  background-image: url("../images/trainer-3.jpg");
-}
-
-
 
 .section-title {
   font-size: 48px;
