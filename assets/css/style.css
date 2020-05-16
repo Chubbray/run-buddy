@@ -336,6 +336,7 @@ section {
 }
 
 .trainer-img {
+ 
   width: 100%;
   min-height: 300px;
   display: flex;
@@ -343,7 +344,14 @@ section {
   align-items: flex-end;
 }
 
-.image-wrapper::after + :hover {
+.trainer-img::before {
+  
+}
+
+.trainer-img:hover {
+  opacity: 0.5;
+}
+.image-wrapper:hover::after {
   content: "";
   height: 100%;
   width: 100%;
@@ -361,19 +369,22 @@ section {
   content: "";
 }
 
-.trainer-1  {
-  background-image: url("../images/trainer-1.jpg");
+.trainer-1 {
+  background-image:linear-gradient(#fce138, #024e76), url("../images/trainer-1.jpg");
   background-size: cover;
+  
 }
 
 .trainer-2 {
   background-image: url("../images/trainer-2.jpg");
   background-size: cover;
+  
 }
 
 .trainer-3 {
   background-image: url("../images/trainer-3.jpg");
   background-size: cover;
+  
 }
 
 .trainer-bio {
